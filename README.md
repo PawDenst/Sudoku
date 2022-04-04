@@ -7,4 +7,4 @@
 — Rozgrywka została urozmaicona o szeroki wachlarz doznań audiowizualnych. <br />
 — Gracz ma możliwość skorzystania z opcji podpowiedzi, która wypełnia losowe pole pasującą cyfrą. <br />
 — Gracz ma możliwość skorzystania z opcji resetu, która przywraca rozgrywkę do początkowego stanu. <br />
-
+<img src="https://github.com/PawDenst/Sudoku/main/jpg/Sudoku.png?raw=true">
