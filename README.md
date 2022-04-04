@@ -1,3 +1,4 @@
+# SUDOKU
 — Projekt został wykonany z wykorzystaniem Gui. <br />
 — W projekcie wykorzystana została technologia generowania losowych plansz z możliwością ich automatycznego rozwiązania. <br />
 — Wraz z rozpoczęciem nowej gry, można wybrać jeden z czterech dostępnych poziomów trudności. <br />
