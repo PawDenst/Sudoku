@@ -1,11 +1,9 @@
-# ostatnia wersja znajduje się w katalogu 'sudoku'.
-
-# Ciekawe linki
-## Javafx
-*  https://javastart.pl/baza-wiedzy/frameworki/javafx
-*  https://fearby.com/article/creating-your-first-java-fx-app-and-using-scene-builder-in-the-intellij-idea-ide/
-
-## Solver
-
-*  (ta wersja wydaje się bardzo dobra i tej narazie używam) https://medium.com/javarevisited/build-a-sudoku-solver-in-java-part-1-c308bd511481
-*  https://www.101computing.net/backtracking-algorithm-sudoku-solver/
+— Projekt został wykonany z wykorzystaniem Gui.
+— W projekcie wykorzystana została technologia generowania losowych plansz z możliwością ich automatycznego rozwiązania.
+— Wraz z rozpoczęciem nowej gry, można wybrać jeden z czterech dostępnych poziomów trudności.
+— Istnieje możliwość stworzenia własnej planszy, która zaciekle broni się przed wpisaniem niepoprawnej mapy.
+— Istnieje możliwość zapisu do pliku umożliwiającego czytelny wydruk.
+— Istnieje możliwość zapisu obecnego stanu planszy do pliku oraz późniejszego wczytania w celu kontynuowania rozgrywki.
+— Rozgrywka została urozmaicona o szeroki wachlarz doznań audiowizualnych.
+— Gracz ma możliwość skorzystania z opcji podpowiedzi, która wypełnia losowe pole pasującą cyfrą.
+— Gracz ma możliwość skorzystania z opcji resetu, która przywraca rozgrywkę do początkowego stanu.
