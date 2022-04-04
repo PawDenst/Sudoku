@@ -1,0 +1,31 @@
+.custom {
+  -fx-control-inner-background: orange;
+}
+
+.full {
+  -fx-control-inner-background: silver ;
+  -fx-opacity: 1;
+}
+
+.ok {
+  -fx-control-inner-background: green ;
+  -fx-opacity: 1;
+}
+
+.notOk {
+  -fx-control-inner-background: red ;
+  -fx-opacity: 1;
+}
+
+.hint {
+  -fx-control-inner-background: #42f5b6 ;
+  -fx-opacity: 1;
+}
+
+#pane{
+    -fx-background-image: url("tlo1.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 390 490;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}

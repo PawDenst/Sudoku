@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane id="pane" maxHeight="581.0" maxWidth="811.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gra.Controller">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+    <top>
+        <VBox prefHeight="52.0" prefWidth="811.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar prefHeight="27.0" prefWidth="600.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Nowa Gra">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#nowaLatwa" text="Łatwy" />
+                        <MenuItem mnemonicParsing="false" onAction="#nowaSrednia" text="Średni" />
+                        <MenuItem mnemonicParsing="false" onAction="#nowaTrudna" text="Trudny" />
+                        <MenuItem mnemonicParsing="false" onAction="#nowaEkspert" text="Ekspert" />
+                        <MenuItem mnemonicParsing="false" onAction="#nowaWlasna" text="Własna" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Opcje">
+                            <items>
+                                <MenuItem fx:id="rese" disable="true" mnemonicParsing="false" onAction="#reset" text="reset" />
+                        <MenuItem fx:id="podpowie" disable="true" mnemonicParsing="false" onAction="#podpowiedz" text="podpowiedź" />
+                        <MenuItem fx:id="rozw" disable="true" mnemonicParsing="false" onAction="#rozwiaz" text="rozwiąż" />
+                        <MenuItem fx:id="zapi" disable="true" mnemonicParsing="false" onAction="#zapisz" text="zapisz" />
+                        <MenuItem mnemonicParsing="false" onAction="#wczytaj" text="wczytaj" />
+                        <MenuItem mnemonicParsing="false" onAction="#zapiszDoDruku" text="zapisz do druku" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <HBox alignment="CENTER_RIGHT" minHeight="-Infinity" prefHeight="45.0" prefWidth="811.0">
+               <children>
+                  <Button fx:id="zatwierdzWlasna" mnemonicParsing="false" onAction="#zatwierdzWlasna" text="Zatwierdź" visible="false">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin></Button>
+                  <Text fx:id="zledane" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </Text>
+               </children></HBox>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <HBox alignment="TOP_CENTER" prefHeight="445.0" prefWidth="386.0" spacing="5.0" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t11" fx:id="t11" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t21" fx:id="t21" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t31" fx:id="t31" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t41" fx:id="t41" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t51" fx:id="t51" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t61" fx:id="t61" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t71" fx:id="t71" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t81" fx:id="t81" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t91" fx:id="t91" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t12" fx:id="t12" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t22" fx:id="t22" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t32" fx:id="t32" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t42" fx:id="t42" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t52" fx:id="t52" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t62" fx:id="t62" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t72" fx:id="t72" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t82" fx:id="t82" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t92" fx:id="t92" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t13" fx:id="t13" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t23" fx:id="t23" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t33" fx:id="t33" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t43" fx:id="t43" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t53" fx:id="t53" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t63" fx:id="t63" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t73" fx:id="t73" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t83" fx:id="t83" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t93" fx:id="t93" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <Line endX="-100.0" endY="350.0" startX="-100.0" startY="715.0" />
+                <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t14" fx:id="t14" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t24" fx:id="t24" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t34" fx:id="t34" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t44" fx:id="t44" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t54" fx:id="t54" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t64" fx:id="t64" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t74" fx:id="t74" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t84" fx:id="t84" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t94" fx:id="t94" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t15" fx:id="t15" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t25" fx:id="t25" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t35" fx:id="t35" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t45" fx:id="t45" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t55" fx:id="t55" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t65" fx:id="t65" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t75" fx:id="t75" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t85" fx:id="t85" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t95" fx:id="t95" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="45.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t16" fx:id="t16" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t26" fx:id="t26" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t36" fx:id="t36" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t46" fx:id="t46" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t56" fx:id="t56" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t66" fx:id="t66" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t76" fx:id="t76" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t86" fx:id="t86" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t96" fx:id="t96" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <Line endX="-100.0" endY="350.0" startX="-100.0" startY="715.0" />
+                <VBox alignment="TOP_CENTER" layoutX="80.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t17" fx:id="t17" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t27" fx:id="t27" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t37" fx:id="t37" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t47" fx:id="t47" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t57" fx:id="t57" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t67" fx:id="t67" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t77" fx:id="t77" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t87" fx:id="t87" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t97" fx:id="t97" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="115.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t18" fx:id="t18" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t28" fx:id="t28" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t38" fx:id="t38" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t48" fx:id="t48" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t58" fx:id="t58" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t68" fx:id="t68" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t78" fx:id="t78" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t88" fx:id="t88" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t98" fx:id="t98" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+                <VBox alignment="TOP_CENTER" layoutX="255.0" layoutY="10.0" prefHeight="200.0" prefWidth="35.0" spacing="5.0">
+                    <children>
+                        <TextField id="t19" fx:id="t19" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t29" fx:id="t29" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t39" fx:id="t39" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" startX="-100.0" />
+                        <TextField id="t49" fx:id="t49" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t59" fx:id="t59" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t69" fx:id="t69" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <Line endX="-65.0" layoutX="111.0" layoutY="131.0" startX="-100.0" />
+                        <TextField id="t79" fx:id="t79" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t89" fx:id="t89" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                        <TextField id="t99" fx:id="t99" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" />
+                    </children>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </HBox>
+    </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="8.0" />
+         </BorderPane.margin>
+         <children>
+            <Button fx:id="sprawdz" disable="true" mnemonicParsing="false" onAction="#sprawdz" text="sprawdź">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Text fx:id="tekst" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
